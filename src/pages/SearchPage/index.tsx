@@ -3,7 +3,7 @@ import { Container } from "./style";
 export function SearchPage() {
   return (
     <Container>
-      <h1>Home</h1>
+      <h1>SearchPage</h1>
     </Container>
   );
 }
