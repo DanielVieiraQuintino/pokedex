@@ -9,7 +9,7 @@ export type TypeProps = {
 export function CardType({ type, size = 10 }: TypeProps) {
   return (
     <Container type={type} size={size}>
-      <h1>{type}</h1>
+      {type}
     </Container>
   );
 }
