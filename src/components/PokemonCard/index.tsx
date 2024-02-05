@@ -3,13 +3,14 @@ import { CardType } from "../CardType";
 import { Container } from "./styles";
 
 type Props = {
-  pokemon: Pokemon
-}
+  pokemon: Pokemon;
+};
 
 export function PokemonCard({ pokemon }: Props) {
   return (
     <Container>
       <img src={pokemon.sprites.other["official-artwork"].front_default} />
+
       <strong>
         #{pokemon.id} {pokemon.name}
       </strong>

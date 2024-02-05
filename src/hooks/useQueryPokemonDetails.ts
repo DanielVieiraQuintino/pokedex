@@ -3,7 +3,7 @@ import { API } from "../configs/api";
 import { Pokemon } from "../@types/pokemon";
 
 async function getPokemon(name: string) {
-  const {data} = await API.get(`/pokemon/${name}`);
+  const { data } = await API.get(`/pokemon/${name}`);
   return data as Pokemon;
 }
 

@@ -18,8 +18,8 @@ export function Header() {
   } = useForm<Input>();
 
   const onSubmit: SubmitHandler<Input> = (data) => {
-    navigate(`/search?q=${data.inputSearch}`)
-    reset()
+    navigate(`/search?q=${data.inputSearch}`);
+    reset();
   };
 
   return (
@@ -27,15 +27,16 @@ export function Header() {
       <Link to={"/"}>
         <img src={pokemonLogo} alt="logo com texto pokemon" />
       </Link>
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <section>
           <label htmlFor="inputSearch" className="srOnly">
             Pesquisar Pokémon
           </label>
+
           <input
             type="text"
-            id="inpuSearch"
-            autoFocus
+            id="inputSearch"
             placeholder="Pesquisar Pokémon"
             {...register("inputSearch", {
               required: "Preencha o nome do Pokémon",

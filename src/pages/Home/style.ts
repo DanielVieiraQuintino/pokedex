@@ -38,7 +38,7 @@ export const Container = styled.main`
       font-weight: 700;
       padding: 0.6rem 1.2rem;
       border-radius: 0.8rem;
-      box-shadow: 1px 1px 2px 0px;
+      box-shadow: 1px 1px 2px 0px #0008;
       text-shadow: 1px 1px 2px #0004;
 
       &:disabled {
@@ -54,7 +54,7 @@ export const Container = styled.main`
   @media (min-width: 768px) {
     h1 {
       margin-top: 2.4rem;
-      font-size: 2rem;
+      font-size: 2.8rem;
     }
 
     .gridCards {
@@ -64,9 +64,9 @@ export const Container = styled.main`
 
     .paginationComponent {
       width: 32rem;
-      margin-top: 3.2rem auto 0;
+      margin: 3.2rem auto 0;
 
-      .numberPage {
+      .boxNumberPage {
         font-size: 1.8rem;
       }
 

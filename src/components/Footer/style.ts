@@ -13,7 +13,7 @@ export const Container = styled.div`
     font-size: 1.2rem;
     border-radius: 0.8rem;
     padding: 1.2rem;
-    background: #eee2;
+    background: #eee2; /* # eee2 */
     display: block;
     color: ${({ theme }) => theme.colors.light};
     text-align: center;

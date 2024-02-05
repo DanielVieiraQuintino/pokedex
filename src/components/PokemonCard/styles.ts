@@ -40,16 +40,16 @@ export const Container = styled.div`
     min-height: 28rem;
 
     img {
-        width: 16rem;
+      width: 16rem;
     }
-    
+
     strong {
-        font-size: 1.6rem;
+      font-size: 1.6rem;
     }
 
     .boxTypes {
-        gap: 0.8rem;
-        margin-top: 1.2rem;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
     }
   }
 `;
