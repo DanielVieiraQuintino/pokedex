@@ -3,6 +3,7 @@ import { Container } from "./style";
 import { useQueryPokemonDetails } from "../../hooks/useQueryPokemonDetails";
 import { useEffect } from "react";
 import { CardType } from "../../components/CardType";
+import pokeball from "../../assets/pokeball.png";
 
 export function Details() {
   const { name } = useParams();
@@ -30,7 +31,9 @@ export function Details() {
 
           <div className="pokemonImage">
             <img
-              src={data.sprites.other["official-artwork"].front_default}
+              src={
+                data.sprites.other["official-artwork"].front_default || pokeball
+              }
               alt={data.name}
             />
           </div>
@@ -56,19 +59,18 @@ export function Details() {
                 );
               })}
             </div>
-
-            <div className="boxStats">
-              {data.stats.map((status) => {
-                return (
-                  <div className="stats" key={status.stat.name}>
-                    <span className="statsName" key={status.stat.name}></span>
-                    <span>{status.stat.name}</span>
-                    <progress value={status.base_stat} max={200} />
-                    <span className="statsValue">{status.base_stat}</span>
-                  </div>
-                );
-              })}
-            </div>
+          </div>
+          <div className="boxStats">
+            {data.stats.map((status) => {
+              return (
+                <div className="stats" key={status.stat.name}>
+                  <span className="statsName" key={status.stat.name}></span>
+                  <span>{status.stat.name}</span>
+                  <progress value={status.base_stat} max={200} />
+                  <span className="">{status.base_stat}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       )}
