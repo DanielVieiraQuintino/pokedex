@@ -26,7 +26,7 @@ export function Details() {
       {data && (
         <div className="boxDetails">
           <button onClick={() => navigate(-1)} className="buttonBackPage">
-            &lt; voltar
+            <h1>voltar</h1>
           </button>
 
           <div className="pokemonImage">
