@@ -3,8 +3,8 @@ import { Container } from "./style";
 export function Footer() {
   return (
     <Container>
-      <a href="https://emanuelquintino.github.io/Page-WDC/" target="_blank">
-        Reprograma Jucás
+      <a href="https://www.instagram.com/cmpunk_we/zwwedwd" target="_blank">
+        Instagram
       </a>
     </Container>
   );
