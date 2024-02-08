@@ -14,8 +14,13 @@ export const Container = styled.main`
     overflow: hidden;
 
     .buttonBackPage {
-      font-size: 1.4rem;
-      font-weight: 500;
+      background: ${({ theme }) => theme.colors.complementary};
+      color: ${({ theme }) => theme.colors.light};
+      box-shadow: 1px 1px 1px #0004;
+      border-radius: 7rem;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      font-weight: 700;
       position: absolute;
       top: 16px;
       left: 18px;
